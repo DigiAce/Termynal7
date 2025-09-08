@@ -106,7 +106,13 @@ const About = () => {
 
         {/* Hero Content */}
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="animate-fade-in">
+          {/* Transparent Background Image */}
+
+          {/* Overlay for Smooth Readability */}
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 rounded-2xl"></div> */}
+
+          {/* Main Content */}
+          <div className="relative z-10 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
               <Globe className="w-5 h-5 text-white" />
               <span className="text-white font-medium">Travel Redefined</span>
@@ -134,17 +140,10 @@ const About = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300"
+                className="border-white text-black hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300"
               >
                 View Our Packages
               </Button>
-            </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </div>

@@ -13,15 +13,17 @@ const DomesticPackages = () => {
       highlights: "Beaches, water sports & nightlife",
       price: "₹12,999",
       location: "Goa",
-      image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&h=250&fit=crop",
     },
     {
       title: "Kerala Backwaters",
-      duration: "5 Nights / 6 Days", 
+      duration: "5 Nights / 6 Days",
       highlights: "Houseboat, Munnar, Alleppey",
       price: "₹18,999",
       location: "Kerala",
-      image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&h=250&fit=crop",
     },
     {
       title: "Golden Triangle",
@@ -29,7 +31,8 @@ const DomesticPackages = () => {
       highlights: "Delhi, Agra & Jaipur",
       price: "₹16,999",
       location: "North India",
-      image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&h=250&fit=crop",
     },
     {
       title: "Kashmir Paradise",
@@ -37,7 +40,8 @@ const DomesticPackages = () => {
       highlights: "Srinagar, Gulmarg, Pahalgam",
       price: "₹22,999",
       location: "Kashmir",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
     },
     {
       title: "Himachal Delight",
@@ -45,7 +49,8 @@ const DomesticPackages = () => {
       highlights: "Shimla, Manali, Dharamshala",
       price: "₹19,999",
       location: "Himachal Pradesh",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3b8c7ad15?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1626621341517-bbf3b8c7ad15?w=400&h=250&fit=crop",
     },
     {
       title: "Andaman Escape",
@@ -53,7 +58,8 @@ const DomesticPackages = () => {
       highlights: "Port Blair, Havelock, Radhanagar Beach",
       price: "₹28,999",
       location: "Andaman",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop",
     },
     {
       title: "Rajasthan Royal Tour",
@@ -61,7 +67,8 @@ const DomesticPackages = () => {
       highlights: "Jaipur, Jodhpur, Udaipur, Jaisalmer",
       price: "₹24,999",
       location: "Rajasthan",
-      image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&h=250&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&h=250&fit=crop",
     },
     {
       title: "North East Explorer",
@@ -69,20 +76,24 @@ const DomesticPackages = () => {
       highlights: "Shillong, Cherrapunji, Kaziranga, Guwahati",
       price: "₹26,999",
       location: "North East India",
-      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&h=250&fit=crop"
-    }
+      image:
+        "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&h=250&fit=crop",
+    },
   ];
 
   const PackageCard = ({ pkg }: { pkg: any }) => (
     <Card className="border-0 shadow-elegant hover:shadow-glow transition-all duration-300 group overflow-hidden">
       <div className="relative">
-        <img 
-          src={pkg.image} 
+        <img
+          src={pkg.image}
           alt={pkg.title}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <Badge variant="secondary" className="bg-background/90 backdrop-blur-sm">
+          <Badge
+            variant="secondary"
+            className="bg-background/90 backdrop-blur-sm"
+          >
             🇮🇳 Domestic
           </Badge>
         </div>
@@ -107,9 +118,7 @@ const DomesticPackages = () => {
             <Calendar className="w-4 h-4 mr-2" />
             <span className="text-sm">{pkg.duration}</span>
           </div>
-          <p className="text-sm text-muted-foreground">
-            {pkg.highlights}
-          </p>
+          <p className="text-sm text-muted-foreground">{pkg.highlights}</p>
           <Button variant="hero" className="w-full mt-4">
             Book Now
           </Button>
@@ -121,7 +130,7 @@ const DomesticPackages = () => {
   return (
     <main className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-ocean">
         <div className="container mx-auto px-4 text-center">
@@ -129,7 +138,8 @@ const DomesticPackages = () => {
             🇮🇳 Domestic Packages
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Explore the incredible beauty of India with our carefully curated domestic travel packages
+            Explore the incredible beauty of India with our carefully curated
+            domestic travel packages
           </p>
         </div>
       </section>

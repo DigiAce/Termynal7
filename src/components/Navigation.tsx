@@ -33,7 +33,7 @@ const Navigation = () => {
                 <Waves className=" text-primary-foreground" />
               </div>
             </div> */}
-            <div className="flex flex-col w-52 h-52">
+            <div className="flex flex-col w-52 h-auto">
               <img src="logo2.png" alt="Termynal7 Logo" />
             </div>
           </Link>
