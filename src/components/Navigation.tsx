@@ -101,20 +101,28 @@ const Navigation = () => {
 
           {/* Enhanced Contact Button */}
           <div className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center text-sm text-muted-foreground bg-muted/50 px-4 py-2 rounded-full backdrop-blur-sm">
-              <Phone className="w-4 h-4 mr-2 text-primary" />
-              <span className="font-medium">+91 9940882200</span>
-            </div>
+            <a href="tel:+918110007717" className="block">
+              <div className="flex items-center px-4 py-3 text-sm text-muted-foreground bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
+                <Phone className="w-4 h-4 mr-2 text-primary" />
+                <span className="font-medium">+91 81100 07717</span>
+              </div>
+            </a>
+
             <Button
+              asChild
               variant="hero"
               size="sm"
               className="relative overflow-hidden group shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
             >
-              <span className="relative z-10 flex items-center">
+              <a
+                href="https://wa.me/918110007717?text=Hi%2C%20I%20would%20like%20to%20book%20now"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
                 <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
                 Book Now
-              </span>
-              <div className="absolute inset-0 bg-gradient-sunset opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              </a>
             </Button>
           </div>
 
@@ -187,17 +195,28 @@ const Navigation = () => {
 
               <div className="h-px bg-border/50 my-2"></div>
 
-              <div className="flex items-center px-4 py-3 text-sm text-muted-foreground bg-muted/30 rounded-lg">
-                <Phone className="w-4 h-4 mr-2 text-primary" />
-                <span className="font-medium">+91 9940882200</span>
-              </div>
+              <a href="tel:+918110007717" className="block">
+                <div className="flex items-center px-4 py-3 text-sm text-muted-foreground bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
+                  <Phone className="w-4 h-4 mr-2 text-primary" />
+                  <span className="font-medium">+91 81100 07717</span>
+                </div>
+              </a>
+
               <Button
+                asChild
                 variant="hero"
                 size="sm"
-                className="mx-4 mt-2 shadow-glow hover:scale-105 transition-all duration-300"
+                className="relative overflow-hidden group shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
               >
-                <Sparkles className="w-4 h-4 mr-2" />
-                Book Now
+                <a
+                  href="https://wa.me/918110007717?text=Hi%2C%20I%20would%20like%20to%20book%20now"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                  Book Now
+                </a>
               </Button>
             </div>
           </div>

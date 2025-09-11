@@ -88,7 +88,7 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-ocean">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.12),transparent_70%)]"></div>
@@ -121,16 +121,20 @@ const About = () => {
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
               About{" "}
               <span className="block bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
-                Termynal7
+                <img
+                  src="logo2.png"
+                  alt="Termynal7 Logo"
+                  className="h-28 w-auto inline-block"
+                />
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Creating unforgettable journeys where every destination becomes a
               story and every story becomes a cherished memory.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300"
@@ -144,7 +148,7 @@ const About = () => {
               >
                 View Our Packages
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
