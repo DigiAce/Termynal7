@@ -15,13 +15,16 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["mail@gtholidays.in", "Quick Response"],
+      details: ["termynal7@gmail.com", "Quick Response"],
       color: "text-accent",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Travel Office", "South India"],
+      details: [
+        "Travel Office",
+        "1/1A UR Nagar Anna Nagar West EXTN Chennai 50",
+      ],
       color: "text-primary",
     },
     {

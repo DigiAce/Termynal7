@@ -38,17 +38,30 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="group">
+            {/* <Button variant="hero" size="lg" className="group">
               Explore Packages
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+            </Button> */}
+            <a
+              href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20now"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Plan My Trip
-            </Button>
+              <Button
+                variant="hero"
+                className="w-full mt-4 flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-5 h-5"
+                >
+                  <path d="M20.52 3.48a11.89 11.89 0 0 0-16.84 0 11.89 11.89 0 0 0-2.2 13.64L1 23l5.97-1.57a11.9 11.9 0 0 0 13.55-2.2 11.89 11.89 0 0 0 0-16.84ZM12 20.33a8.32 8.32 0 0 1-4.25-1.17l-.3-.18-3.54.93.95-3.45-.19-.31a8.34 8.34 0 1 1 7.33 4.18Zm4.55-6.34c-.25-.12-1.48-.73-1.71-.81s-.4-.12-.57.12-.65.81-.8.97-.3.18-.55.06a6.77 6.77 0 0 1-2-1.23 7.53 7.53 0 0 1-1.39-1.71c-.14-.24 0-.38.1-.5.1-.1.25-.3.37-.45s.16-.25.25-.42.04-.31-.02-.43c-.06-.12-.57-1.38-.78-1.89-.2-.48-.41-.42-.57-.43h-.49c-.16 0-.43.06-.65.31s-.86.84-.86 2.06.88 2.4 1 2.57 1.73 2.64 4.19 3.71c.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2s-.22-.18-.47-.3Z" />
+                </svg>
+                Book on WhatsApp
+              </Button>
+            </a>
           </div>
 
           {/* Trust Indicators */}
