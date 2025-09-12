@@ -43,7 +43,7 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button> */}
             <a
-              href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20now"
+              href="https://wa.me/918110007717?text=Hi%20I%20want%20to%20book%20now"
               target="_blank"
               rel="noopener noreferrer"
             >

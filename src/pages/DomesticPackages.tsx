@@ -129,7 +129,7 @@ const DomesticPackages = () => {
           </div>
           <p className="text-sm text-muted-foreground">{pkg.highlights}</p>
           <a
-            href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20now"
+            href="https://wa.me/918110007717?text=Hi%20I%20want%20to%20book%20now"
             target="_blank"
             rel="noopener noreferrer"
           >
