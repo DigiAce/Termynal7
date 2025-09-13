@@ -17,6 +17,25 @@ const Footer = () => {
     { name: "International Packages", href: "/international-packages" },
   ];
 
+  // Social media links
+  const socialLinks = [
+    // {
+    //   Icon: Facebook,
+    //   href: "https://www.facebook.com/yourpage",
+    //   label: "Facebook",
+    // },
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/termynal7/",
+      label: "Instagram",
+    },
+    // {
+    //   Icon: Twitter,
+    //   href: "https://www.twitter.com/yourprofile",
+    //   label: "Twitter",
+    // },
+  ];
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -32,15 +51,22 @@ const Footer = () => {
               worry-free.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Instagram, Twitter].map((Icon, idx) => (
-                <Button
+              {socialLinks.map((social, idx) => (
+                <a
                   key={idx}
-                  variant="ghost"
-                  size="icon"
-                  className="text-primary-foreground hover:text-accent"
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                 >
-                  <Icon className="w-5 h-5" />
-                </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-primary-foreground hover:text-accent"
+                  >
+                    <social.Icon className="w-5 h-5" />
+                  </Button>
+                </a>
               ))}
             </div>
           </div>
@@ -90,7 +116,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-accent mt-0.5" />
                 <div>
                   <div className="font-medium">
-                    1/1A UR Nagar Anna Nagar West EXTN Chennai 50
+                    1/1A UR Nagar Anna Nagar West EXTN Chennai 50
                   </div>
                   <div className="text-sm text-primary-foreground/80">
                     Travel Office
@@ -109,6 +135,8 @@ const Footer = () => {
               Powered By{" "}
               <a
                 href="https://www.digiace.in/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
               >
                 Digiace

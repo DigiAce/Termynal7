@@ -119,15 +119,15 @@ const Testimonials = () => {
                   key={testimonial.id}
                   className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
                 >
-                  <Card className="h-full bg-card/80 backdrop-blur-sm border-border/50 hover:shadow-elegant hover:scale-105 transition-all duration-300 group">
-                    <CardContent className="p-6">
+                  <Card className="h-full bg-card/80 backdrop-blur-sm border-border/50 hover:shadow-elegant hover:scale-105 transition-all duration-300 group flex flex-col">
+                    <CardContent className="p-6 flex flex-col flex-grow">
                       {/* Quote Icon */}
                       <div className="mb-4">
                         <Quote className="w-8 h-8 text-primary/30 group-hover:text-primary/50 transition-colors" />
                       </div>
 
-                      {/* Review Text */}
-                      <blockquote className="text-foreground/90 mb-6 leading-relaxed">
+                      {/* Review Text - Fixed height with scroll */}
+                      <blockquote className="text-foreground/90 mb-6 leading-relaxed flex-grow overflow-y-auto max-h-48">
                         "{testimonial.text}"
                       </blockquote>
 
@@ -144,7 +144,7 @@ const Testimonials = () => {
                       </div>
 
                       {/* Customer Info */}
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-4 mt-auto">
                         <Avatar className="w-12 h-12 ring-2 ring-primary/20">
                           <AvatarImage
                             src={testimonial.avatar}
