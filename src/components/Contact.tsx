@@ -9,13 +9,18 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 81100 07717", "Available 24/7"],
+      details: [
+        "+91 81100 07717",
+        "+91 81100 07716",
+        "+91 78711 30120",
+        "Available 24/7",
+      ],
       color: "text-primary",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["termynal7@gmail.com", "Quick Response"],
+      details: ["booking@termynal7.com", "Quick Response"],
       color: "text-accent",
     },
     {

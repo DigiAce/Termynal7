@@ -96,6 +96,8 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-accent mt-0.5" />
                 <div>
                   <div className="font-medium">+91 81100 07717</div>
+                  <div className="font-medium">+91 81100 07716</div>
+                  <div className="font-medium">+91 78711 30120</div>
                   <div className="text-sm text-primary-foreground/80">
                     24/7 Support Available
                   </div>
@@ -105,7 +107,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-accent mt-0.5" />
                 <div>
-                  <div className="font-medium">termynal7@gmail.com</div>
+                  <div className="font-medium">booking@termynal7.com</div>
                   <div className="text-sm text-primary-foreground/80">
                     Quick Response
                   </div>
