@@ -118,7 +118,8 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-accent mt-0.5" />
                 <div>
                   <div className="font-medium">
-                    1/1A UR Nagar Anna Nagar West EXTN Chennai 50
+                    1&1A, UR Nagar Extn, Anna Nagar W Ext St, Chennai, Tamil
+                    Nadu 600101
                   </div>
                   <div className="text-sm text-primary-foreground/80">
                     Travel Office

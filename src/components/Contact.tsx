@@ -28,7 +28,7 @@ const Contact = () => {
       title: "Visit Us",
       details: [
         "Travel Office",
-        "1/1A UR Nagar Anna Nagar West EXTN Chennai 50",
+        "1&1A, UR Nagar Extn, Anna Nagar W Ext St, Chennai, Tamil Nadu 600101",
       ],
       color: "text-primary",
     },
