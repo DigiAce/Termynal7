@@ -175,7 +175,7 @@ const DomesticPackages = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-10 mt-16">
           {/* Transparent Background Image */}
 
           {/* Overlay for Smooth Readability */}
